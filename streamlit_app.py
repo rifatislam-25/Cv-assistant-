@@ -9,7 +9,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain_groq import ChatGroq
 
 # --- Secure API Key ---
-os.environ["GROQ_API_KEY"] = "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"  # Replace with your actual key
+os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 
 # --- Load Embedding Model ---
 embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-MiniLM-L6-v2")
@@ -87,5 +87,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
