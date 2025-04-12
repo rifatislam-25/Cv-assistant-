@@ -7,3 +7,4 @@ faiss-cpu
 sentence-transformers==2.2.2
 transformers==4.31.0
 torch==2.2.2
+tokenizers==0.13.3
